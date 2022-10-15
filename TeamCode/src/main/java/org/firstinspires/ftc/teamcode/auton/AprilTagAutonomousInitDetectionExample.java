@@ -99,12 +99,13 @@ public class AprilTagAutonomousInitDetectionExample extends LinearOpMode
 
                 for(AprilTagDetection tag : currentDetections)
                 {
-                    if(tag.id == ONE || tag.id == TWO || tag.id == THREE)
-                    {
+// Kinda funny way of getting the (arbitrary?) first tag
+//                    if(tag.id == ONE || tag.id == TWO || tag.id == THREE)
+//                    {
                         tagOfInterest = tag;
                         tagFound = true;
                         break;
-                    }
+//                    }
                 }
 
                 if(tagFound)
